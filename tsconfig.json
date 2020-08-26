@@ -1,0 +1,14 @@
+{
+  "include": [
+    "src/*"
+  ],
+  "compilerOptions": {
+    "incremental": true,
+    "moduleResolution": "node",
+    "outDir": "dist",
+    "target": "es5",
+    "jsx": "react",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true
+  }
+}
