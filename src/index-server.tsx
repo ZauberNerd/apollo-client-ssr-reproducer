@@ -15,7 +15,7 @@ export async function render() {
     ssrMode: true,
     link: createHttpLink({ uri: 'http://localhost:3000/graphql', fetch }),
     // remove the "possibleTypes" parameter
-    cache: new InMemoryCache(),
+    cache: new InMemoryCache({ possibleTypes: {} }),
   });
 
   const content = await renderToStringWithData(
